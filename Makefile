@@ -1,3 +1,7 @@
+ifeq ($(ROOTLESS),1)
+THEOS_PACKAGE_SCHEME=rootless
+endif
+
 TARGET := iphone:clang:latest:7.0
 INSTALL_TARGET_PROCESSES = YouTube
 
