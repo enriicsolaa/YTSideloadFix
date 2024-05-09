@@ -1,3 +1,5 @@
+#import <Foundation/Foundation.h>
+
 %hook SSOKeychain
 + (id)accessGroup {
     NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:
